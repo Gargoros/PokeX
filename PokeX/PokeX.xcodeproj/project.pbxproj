@@ -54,6 +54,12 @@
 		8C44343F2BD13ADE001B972D /* PokeX */ = {
 			isa = PBXGroup;
 			children = (
+				8C4434602BD16BC3001B972D /* Utilities */,
+				8C44345F2BD16B96001B972D /* Data */,
+				8C44345E2BD16B8A001B972D /* Extension */,
+				8C44345C2BD16B04001B972D /* ViewModels */,
+				8C44345B2BD16AFF001B972D /* Views */,
+				8C44345A2BD16AF7001B972D /* Models */,
 				8C4434572BD161EC001B972D /* Info.plist */,
 				8C44344F2BD13B05001B972D /* Resources */,
 				8C44344E2BD13B00001B972D /* App */,
@@ -86,6 +92,48 @@
 				8C4434582BD166F6001B972D /* Launch Screen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C44345A2BD16AF7001B972D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C44345B2BD16AFF001B972D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C44345C2BD16B04001B972D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8C44345E2BD16B8A001B972D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8C44345F2BD16B96001B972D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8C4434602BD16BC3001B972D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
