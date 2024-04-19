@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="pokexLogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pni-rc-Ybk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="pokeXLogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pni-rc-Ybk">
                                 <rect key="frame" x="23" y="84" width="384" height="764"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                             </imageView>
@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pokexLogo" width="490" height="757"/>
+        <image name="pokeXLogo" width="490" height="757"/>
         <namedColor name="launchScreenBG">
             <color red="0.74117647058823533" green="0.73725490196078436" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
