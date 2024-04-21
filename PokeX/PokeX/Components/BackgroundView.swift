@@ -17,15 +17,6 @@ struct BackgroundView: View {
             ],
             startPoint: .top,
             endPoint: .bottom)
-        
-//        LinearGradient(
-//            gradient: Gradient(stops: [
-//                Gradient.Stop(color: .appBackgroundColorOne, location: 0.15),
-//                Gradient.Stop(color: .appBackgroundColorTwo, location: 0.1)
-//            ]),
-//            startPoint: .topLeading,
-//            endPoint: .bottomTrailing
-//        )
         .ignoresSafeArea()
     }
 }
