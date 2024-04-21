@@ -12,6 +12,7 @@
 		8C4434452BD13AE0001B972D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4434442BD13AE0001B972D /* Assets.xcassets */; };
 		8C4434482BD13AE0001B972D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4434472BD13AE0001B972D /* Preview Assets.xcassets */; };
 		8C4434592BD166F6001B972D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4434582BD166F6001B972D /* Launch Screen.storyboard */; };
+		8CBCA46A2BD52CEC00A54DB4 /* PokeXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCA4692BD52CEC00A54DB4 /* PokeXConstants.swift */; };
 		8CF597A42BD29A5700D08DBA /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF597A32BD29A5700D08DBA /* BackgroundView.swift */; };
 		8CF597A72BD2A0A000D08DBA /* TopTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF597A62BD2A0A000D08DBA /* TopTitleView.swift */; };
 		8CF597A92BD2BF0300D08DBA /* PokeXNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF597A82BD2BF0300D08DBA /* PokeXNewsView.swift */; };
@@ -29,6 +30,7 @@
 		8C4434472BD13AE0001B972D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C4434572BD161EC001B972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8C4434582BD166F6001B972D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8CBCA4692BD52CEC00A54DB4 /* PokeXConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeXConstants.swift; sourceTree = "<group>"; };
 		8CF597A32BD29A5700D08DBA /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		8CF597A62BD2A0A000D08DBA /* TopTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTitleView.swift; sourceTree = "<group>"; };
 		8CF597A82BD2BF0300D08DBA /* PokeXNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeXNewsView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		8C4434602BD16BC3001B972D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8CBCA4692BD52CEC00A54DB4 /* PokeXConstants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				8CF597A92BD2BF0300D08DBA /* PokeXNewsView.swift in Sources */,
 				8CF597A42BD29A5700D08DBA /* BackgroundView.swift in Sources */,
 				8CF597AE2BD2C0FB00D08DBA /* PokeXHorizontalScrollSectionView.swift in Sources */,
+				8CBCA46A2BD52CEC00A54DB4 /* PokeXConstants.swift in Sources */,
 				8CF597B22BD2CBE200D08DBA /* PokeXLinkView.swift in Sources */,
 				8C4434432BD13ADE001B972D /* MainView.swift in Sources */,
 				8CF597AB2BD2C01600D08DBA /* PokeXInfoTextView.swift in Sources */,
