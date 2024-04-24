@@ -13,6 +13,8 @@
 		8C4434482BD13AE0001B972D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4434472BD13AE0001B972D /* Preview Assets.xcassets */; };
 		8C4434592BD166F6001B972D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4434582BD166F6001B972D /* Launch Screen.storyboard */; };
 		8CBCA46A2BD52CEC00A54DB4 /* PokeXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCA4692BD52CEC00A54DB4 /* PokeXConstants.swift */; };
+		8CBCA46D2BD8EF7400A54DB4 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCA46C2BD8EF7400A54DB4 /* OnBoardingView.swift */; };
+		8CBCA46F2BD93F1F00A54DB4 /* PokeXButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCA46E2BD93F1F00A54DB4 /* PokeXButtonView.swift */; };
 		8CF597A42BD29A5700D08DBA /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF597A32BD29A5700D08DBA /* BackgroundView.swift */; };
 		8CF597A72BD2A0A000D08DBA /* TopTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF597A62BD2A0A000D08DBA /* TopTitleView.swift */; };
 		8CF597A92BD2BF0300D08DBA /* PokeXNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF597A82BD2BF0300D08DBA /* PokeXNewsView.swift */; };
@@ -31,6 +33,8 @@
 		8C4434572BD161EC001B972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8C4434582BD166F6001B972D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8CBCA4692BD52CEC00A54DB4 /* PokeXConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeXConstants.swift; sourceTree = "<group>"; };
+		8CBCA46C2BD8EF7400A54DB4 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		8CBCA46E2BD93F1F00A54DB4 /* PokeXButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeXButtonView.swift; sourceTree = "<group>"; };
 		8CF597A32BD29A5700D08DBA /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		8CF597A62BD2A0A000D08DBA /* TopTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTitleView.swift; sourceTree = "<group>"; };
 		8CF597A82BD2BF0300D08DBA /* PokeXNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeXNewsView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 			children = (
 				8C4434402BD13ADE001B972D /* PokeXApp.swift */,
 				8C4434422BD13ADE001B972D /* MainView.swift */,
+				8CBCA46C2BD8EF7400A54DB4 /* OnBoardingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		8C44345B2BD16AFF001B972D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8CBCA46B2BD8EF2D00A54DB4 /* OnBoardingScreen */,
 				8CF597A52BD2A07900D08DBA /* HomeScreen */,
 			);
 			path = Views;
@@ -155,6 +161,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		8CBCA46B2BD8EF2D00A54DB4 /* OnBoardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoardingScreen;
+			sourceTree = "<group>";
+		};
 		8CF597A52BD2A07900D08DBA /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +185,7 @@
 				8CF597AD2BD2C0FB00D08DBA /* PokeXHorizontalScrollSectionView.swift */,
 				8CF597AF2BD2C48E00D08DBA /* PokeXHorizontalImageScrollView.swift */,
 				8CF597B12BD2CBE200D08DBA /* PokeXLinkView.swift */,
+				8CBCA46E2BD93F1F00A54DB4 /* PokeXButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -252,6 +266,8 @@
 				8CF597AE2BD2C0FB00D08DBA /* PokeXHorizontalScrollSectionView.swift in Sources */,
 				8CBCA46A2BD52CEC00A54DB4 /* PokeXConstants.swift in Sources */,
 				8CF597B22BD2CBE200D08DBA /* PokeXLinkView.swift in Sources */,
+				8CBCA46D2BD8EF7400A54DB4 /* OnBoardingView.swift in Sources */,
+				8CBCA46F2BD93F1F00A54DB4 /* PokeXButtonView.swift in Sources */,
 				8C4434432BD13ADE001B972D /* MainView.swift in Sources */,
 				8CF597AB2BD2C01600D08DBA /* PokeXInfoTextView.swift in Sources */,
 				8CF597B02BD2C48E00D08DBA /* PokeXHorizontalImageScrollView.swift in Sources */,
