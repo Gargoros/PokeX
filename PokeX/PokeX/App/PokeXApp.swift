@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct PokeXApp: App {
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if isOnboarding {
+                OnBoardingView()
+            } else {
+                MainView()
+            }
+            
         }
     }
 }
