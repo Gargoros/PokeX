@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     //MARK: - Variables
     var gridLayout: [GridItem] {
-        return Array(repeating: GridItem(.flexible(), spacing: 5), count: 2)
+        return Array(repeating: GridItem(.flexible(minimum: 60, maximum: 70), spacing: 5), count: 2)
     }
     
     //MARK: - Views
@@ -30,21 +30,21 @@ struct MainView: View {
                     
                     //MARK: - Pokédex
                     PokeXHorizontalScrollSectionView(
-                        title: "Hi Trainer",
-                        sectionName: "Category",
+                        title: PokeXConstants.SectionsStrings.hiTrainer,
+                        sectionsNames: PokeXConstants.contentsList,
                         gridLayout: gridLayout
                     )
                     
                     //MARK: - Pokémon Type
                     PokeXHorizontalScrollSectionView(
-                        title: "Pokemon Type",
-                        sectionName: "Type",
+                        title: PokeXConstants.SectionsStrings.pokemonsType,
+                        sectionsNames: PokeXConstants.pokemonsTypesList,
                         gridLayout: gridLayout
                     )
                     
                     //MARK: - Region
                     PokeXHorizontalImageScrollView(
-                        title: "Regions",
+                        title: PokeXConstants.SectionsStrings.regions,
                         image: Image("Paldea_artwork"),
                         imageWidth: 220,
                         imageHeight: 180
@@ -52,7 +52,7 @@ struct MainView: View {
                     
                     //MARK: - Games
                     PokeXHorizontalImageScrollView(
-                        title: "Games",
+                        title: PokeXConstants.Contents.games,
                         image: Image("Scarlet_EN_boxart"),
                         imageWidth: 160
                     )

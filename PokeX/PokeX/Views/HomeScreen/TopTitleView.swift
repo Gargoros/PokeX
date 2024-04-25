@@ -12,11 +12,11 @@ struct TopTitleView: View {
         VStack {
             HStack {
                 Spacer()
-                Text("PokeX")
+                Text(PokeXConstants.SectionsStrings.pokeX)
                     .font(.title3)
                     .fontWeight(.black)
                     .foregroundStyle(.black)
-                Image("pokeXLogo")
+                PokeXConstants.Images.pokeXLogo
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30, height: 30)

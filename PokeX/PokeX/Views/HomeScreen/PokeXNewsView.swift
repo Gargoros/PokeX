@@ -11,7 +11,7 @@ struct PokeXNewsView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("News")
+                Text(PokeXConstants.SectionsStrings.news)
                     .font(.title2)
                     .fontWeight(.semibold)
                 Spacer()

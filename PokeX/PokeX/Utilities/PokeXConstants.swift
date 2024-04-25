@@ -37,6 +37,7 @@ struct PokeXConstants {
     ]
     
     struct SectionsStrings {
+        static let pokeX        = "PokeX"
         static let news         = "News"
         static let hiTrainer    = "Hi Trainer"
         static let categories   = "Categories"
@@ -125,30 +126,30 @@ struct PokeXConstants {
         static let pokemonWhite2             = "Pokémon White 2"
         
         //MARK: - Gen 6
-        static let pokemonX                 = "Pokémon X"
-        static let pokemonY                 = "Pokémon Y"
-        static let pokemonOmegaRuby         = "Pokémon Omega Ruby"
-        static let pokemonAlphaSapphire     = "Pokémon Alpha Sapphire"
+        static let pokemonX                  = "Pokémon X"
+        static let pokemonY                  = "Pokémon Y"
+        static let pokemonOmegaRuby          = "Pokémon Omega Ruby"
+        static let pokemonAlphaSapphire      = "Pokémon Alpha Sapphire"
         
         //MARK: - Gen 7
-        static let pokemonSun               = "Pokémon Sun"
-        static let pokemonMoon              = "Pokémon Moon"
-        static let pokemonUltraSun          = "Pokémon Ultra Sun"
-        static let pokemonUltraMoon         = "Pokémon Ultra Moon"
-        static let pokemonLetsGoPikachu     = "Pokémon Let's Go, Pikachu!"
-        static let pokemonLetsGoEevee       = "Pokémon Let's Go, Eevee!"
+        static let pokemonSun                = "Pokémon Sun"
+        static let pokemonMoon               = "Pokémon Moon"
+        static let pokemonUltraSun           = "Pokémon Ultra Sun"
+        static let pokemonUltraMoon          = "Pokémon Ultra Moon"
+        static let pokemonLetsGoPikachu      = "Pokémon Let's Go, Pikachu!"
+        static let pokemonLetsGoEevee        = "Pokémon Let's Go, Eevee!"
         
         //MARK: - Gen 8
-        static let pokemonSword             = "Pokémon Sword"
-        static let pokemonShield            = "Pokémon Shield"
-        static let pokemonBrilliantDiamond  = "Pokémon Brilliant Diamond"
-        static let pokemonShiningPearl      = "Pokémon Shining Pearl"
-        static let pokemonLegendsArceus     = "Pokémon Legends: Arceus"
+        static let pokemonSword              = "Pokémon Sword"
+        static let pokemonShield             = "Pokémon Shield"
+        static let pokemonBrilliantDiamond   = "Pokémon Brilliant Diamond"
+        static let pokemonShiningPearl       = "Pokémon Shining Pearl"
+        static let pokemonLegendsArceus      = "Pokémon Legends: Arceus"
         
         //MARK: - Gen 9
-        static let pokemonScarlet           = "Pokémon Scarlet"
-        static let pokemonViolet            = "Pokémon Violet"
-        static let pokemonLegendsZA         = "Pokémon Legends: Z - A"
+        static let pokemonScarlet            = "Pokémon Scarlet"
+        static let pokemonViolet             = "Pokémon Violet"
+        static let pokemonLegendsZA          = "Pokémon Legends: Z - A"
     }
     
     

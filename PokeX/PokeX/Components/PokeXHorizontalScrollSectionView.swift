@@ -10,7 +10,7 @@ import SwiftUI
 struct PokeXHorizontalScrollSectionView: View {
     //MARK: - Variables
     let title: String
-    let sectionName: String
+    let sectionsNames: [String]
     var gridLayout: [GridItem]
     
     //MARK: - Views
@@ -26,11 +26,12 @@ struct PokeXHorizontalScrollSectionView: View {
             ScrollView(.horizontal){
                 LazyHGrid(rows: gridLayout, alignment: .center) {
                     Section {
-                        ForEach(0 ..< 10) { item in
-                            Text(sectionName)
+                        ForEach(sectionsNames, id: \.self) { item in
+                            Text(item)
                                 .font(.title2)
                                 .foregroundStyle(.white)
                                 .padding()
+                                .frame(width: 150)
                                 .background(.gray)
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
@@ -45,7 +46,7 @@ struct PokeXHorizontalScrollSectionView: View {
 #Preview {
     PokeXHorizontalScrollSectionView(
         title: "Pokemon Type",
-        sectionName: "Type",
+        sectionsNames: ["Type"],
         gridLayout: [
             GridItem(.flexible()),
             GridItem(.flexible()),
