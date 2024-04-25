@@ -161,6 +161,29 @@ struct PokeXConstants {
         static let launchScreenBG        = Color("launchScreenBG")
     }
     
+    struct PokemonsTypesColors {
+        static let appBugColor          = Color("appBugColor")
+        static let appDarkColor         = Color("appDarkColor")
+        static let appDragonColor       = Color("appDragonColor")
+        static let appElectricColor     = Color("appElectricColor")
+        static let appFairyColor        = Color("appFairyColor")
+        static let appFightingColor     = Color("appFightingColor")
+        static let appFireColor         = Color("appFireColor")
+        static let appFlyingColor       = Color("appFlyingColor")
+        static let appGhostColor        = Color("appGhostColor")
+        static let appGrassColor        = Color("appGrassColor")
+        static let appGroundColor       = Color("appGroundColor")
+        static let appIceColor          = Color("appIceColor")
+        static let appNormalColor       = Color("appNormalColor")
+        static let appPoisonColor       = Color("appPoisonColor")
+        static let appPsychicColor      = Color("appPsychicColor")
+        static let appRockColor         = Color("appRockColor")
+        static let appSteelColor        = Color("appSteelColor")
+        static let appStellarColor      = Color("appStellarColor")
+        static let appUnknownColor      = Color("appUnknownColor")
+        static let appWaterColor        = Color("appWaterColor")
+    }
+    
     //MARK: - Images
     struct Images{
         static let pokeXLogo = Image("pokeXLogo")
