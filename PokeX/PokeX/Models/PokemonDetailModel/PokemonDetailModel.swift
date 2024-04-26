@@ -7,7 +7,7 @@
 import Foundation
 
 // MARK: - Pokemon
-struct Pokemon: Codable {
+struct PokemonDetail: Codable {
     let abilities:              [Ability]?
     let baseExperience:         Int?
     let cries:                  Cries?
