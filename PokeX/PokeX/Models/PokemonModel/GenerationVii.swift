@@ -1,19 +1,19 @@
 //
-//  GenerationViiModel.swift
+//  GenerationVii.swift
 //  PokeX
 //
-//  Created by MIKHAIL ZHACHKO on 25.04.24.
+//  Created by MIKHAIL ZHACHKO on 26.04.24.
 //
 
 import Foundation
 
 // MARK: - GenerationVii
 struct GenerationVii: Codable {
-    let icons: DreamWorld
-    let ultraSunUltraMoon: Home
+    let icons:             DreamWorld?
+    let ultraSunUltraMoon: Home?
 
     enum CodingKeys: String, CodingKey {
-        case icons = "icons"
+        case icons             = "icons"
         case ultraSunUltraMoon = "ultra-sun-ultra-moon"
     }
 }

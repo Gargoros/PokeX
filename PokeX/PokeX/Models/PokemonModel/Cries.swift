@@ -1,16 +1,16 @@
 //
-//  CriesModel.swift
+//  Cries.swift
 //  PokeX
 //
-//  Created by MIKHAIL ZHACHKO on 25.04.24.
+//  Created by MIKHAIL ZHACHKO on 26.04.24.
 //
 
 import Foundation
 
 // MARK: - Cries
 struct Cries: Codable {
-    let latest: String
-    let legacy: String
+    let latest: String?
+    let legacy: String?
 
     enum CodingKeys: String, CodingKey {
         case latest = "latest"
