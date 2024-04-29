@@ -9,39 +9,28 @@ import SwiftUI
 
 struct PokemonListView: View {
     //MARK: - Variables
-    let pokemons: [String] = [
-        "Abra",
-        "Aerodactyl",
-        "Amoonguss",
-        "Barraskewda",
-        "Crabominable",
-        "Corvisquire"
-    ]
+    @ObservedObject var viewModel = PokemonViewModel()
     
     //MARK: - Views
     var body: some View {
-        ZStack {
-            
-            BackgroundView()
-            
-            ScrollView {
-                LazyVStack {
-                    ForEach(pokemons, id: \.self) { pokemon in
-                        PokemonListItemView(
-                            pokemon: pokemon,
-                            backgroundColor: [
-                                .orange.opacity(0.5), .orange.opacity(0.8),
-                                .blue.opacity(0.5), .blue.opacity(0.8)
-                            ],
-                            action: {}
-                        )
-                        .padding(.horizontal, 8)
-                    }
+        ScrollView {
+            LazyVStack(spacing: 15) {
+                ForEach(viewModel.pokemons, id: \.id) {pokemon in
+                    PokemonListItemView(
+                        pokemon: pokemon,
+                        backgroundColor: [.gray],
+                        action: {})
+                    .padding()
                 }
             }
-            .scrollIndicators(.hidden)
+        }
+        .onAppear{
+            Task{
+                await viewModel.loadPokemons()
+            }
             
         }
+        
     }
 }
 

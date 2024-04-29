@@ -13,12 +13,16 @@ struct Pokemons: Codable {
 }
 
 // MARK: - Result
-struct PokemonEntry: Codable {
+struct PokemonEntry: Codable, Identifiable {
     let name: String?
     let url: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case url = "url"
+    }
+    
+    var id: Int? {
+        return Int(url?.split(separator: "/").last?.description ?? "0")
     }
 }
