@@ -191,4 +191,13 @@ struct PokeXConstants {
     
     //MARK: - Fonts
     
+    //MARK: - ApiClient
+    struct ApiClient {
+        static let baseUrl                = "https://pokeapi.co/api/v2/"
+        static let pokemonEndPoint        = "pokemon/"
+        static let pokemonLimit           = "?limit=100000&offset=0"
+        static let pokemonDefaultImageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+        static let pokemonImageType       = ".png"
+    }
+    
 }
