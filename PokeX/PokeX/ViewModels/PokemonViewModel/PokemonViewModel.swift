@@ -21,7 +21,6 @@ final class PokemonViewModel: ObservableObject {
             let apiEndpoint = ApiEndpoints.allPokemons
             let fetchPokemons = try await webService.fetchData(Pokemons.self, from: apiEndpoint)
             pokemons = fetchPokemons.results ?? []
-            print(pokemons)
         }
         catch{
             errorMessage = (error as? APIError)?.localizedDescription ?? "Unknown Error"

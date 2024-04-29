@@ -14,13 +14,14 @@ struct PokemonListView: View {
     //MARK: - Views
     var body: some View {
         ScrollView {
-            LazyVStack(spacing: 15) {
+            LazyVStack(spacing: 0) {
                 ForEach(viewModel.pokemons, id: \.id) {pokemon in
                     PokemonListItemView(
                         pokemon: pokemon,
                         backgroundColor: [.gray],
                         action: {})
-                    .padding()
+                    .padding(.horizontal, 15)
+                    .padding(.vertical, 10)
                 }
             }
         }
