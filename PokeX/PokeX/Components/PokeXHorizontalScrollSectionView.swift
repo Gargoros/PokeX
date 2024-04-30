@@ -27,7 +27,13 @@ struct PokeXHorizontalScrollSectionView: View {
                     Section {
                         ForEach(sectionsNames, id: \.self) { item in
                             Text(item)
-                                .modifier(SectionsItemTextModifier(background: .gray))
+                                .modifier(
+                                    SectionsItemTextModifier(
+                                        background:
+                                            PokemonsTypesColorsEnum(
+                                                type: item).typeColor
+                                    )
+                                )
                         }
                     }
                 }
