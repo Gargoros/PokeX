@@ -13,9 +13,7 @@ struct TopTitleView: View {
             HStack {
                 Spacer()
                 Text(PokeXConstants.SectionsStrings.pokeX)
-                    .font(.title3)
-                    .fontWeight(.black)
-                    .foregroundStyle(.black)
+                    .modifier(TopTitleModifier())
                 PokeXConstants.Images.pokeXLogo
                     .resizable()
                     .scaledToFit()

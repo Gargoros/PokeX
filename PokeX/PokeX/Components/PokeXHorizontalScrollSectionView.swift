@@ -18,8 +18,7 @@ struct PokeXHorizontalScrollSectionView: View {
         VStack {
             HStack {
                 Text(title)
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                    .modifier(TopTitleModifier())
                 Spacer()
             }
             
@@ -28,12 +27,7 @@ struct PokeXHorizontalScrollSectionView: View {
                     Section {
                         ForEach(sectionsNames, id: \.self) { item in
                             Text(item)
-                                .font(.title2)
-                                .foregroundStyle(.white)
-                                .padding()
-                                .frame(width: 150)
-                                .background(.gray)
-                                .clipShape(RoundedRectangle(cornerRadius: 12))
+                                .modifier(SectionsItemTextModifier(background: .gray))
                         }
                     }
                 }
@@ -46,7 +40,7 @@ struct PokeXHorizontalScrollSectionView: View {
 #Preview {
     PokeXHorizontalScrollSectionView(
         title: "Pokemon Type",
-        sectionsNames: ["Type"],
+        sectionsNames: ["Type1","Type2","Type3","Type4","Type5","Type6","Type7","Type8","Type9","Type10"],
         gridLayout: [
             GridItem(.flexible()),
             GridItem(.flexible()),
