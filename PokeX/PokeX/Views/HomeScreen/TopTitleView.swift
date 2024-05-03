@@ -9,16 +9,16 @@ import SwiftUI
 
 struct TopTitleView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Text(PokeXConstants.SectionsStrings.pokeX)
-                    .modifier(TopTitleModifier())
-                PokeXConstants.Images.pokeXLogo
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-            }
+        HStack {
+            
+            Text(PokeXConstants.SectionsStrings.pokeX)
+                .modifier(TopTitleModifier(foregroundColor: .white))
+            PokeXConstants.Images.pokeXLogo
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+            
+            Spacer()
         }
     }
 }

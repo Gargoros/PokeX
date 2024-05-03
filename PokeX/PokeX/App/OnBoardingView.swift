@@ -23,7 +23,7 @@ struct OnBoardingView: View {
                 
                 VStack(alignment: .center, spacing: 10) {
                     Text("Welcome to the PokéX app")
-                        .modifier(TopTitleModifier())
+                        .modifier(TopTitleModifier(foregroundColor: .black))
                     
                     Divider()
                         .frame(width: 100, height: 3)

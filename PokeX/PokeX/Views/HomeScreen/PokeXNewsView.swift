@@ -11,9 +11,10 @@ struct PokeXNewsView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text(PokeXConstants.SectionsStrings.news)
-                    .modifier(TopTitleModifier())
                 Spacer()
+                Text(PokeXConstants.SectionsStrings.news)
+                    .modifier(TopTitleModifier(foregroundColor: .black))
+                
             }
             
             TabView {

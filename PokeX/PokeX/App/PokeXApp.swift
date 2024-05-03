@@ -17,8 +17,7 @@ struct PokeXApp: App {
             if isOnboarding {
                 OnBoardingView()
             } else {
-                PokemonListView()
-                //MainView()
+                MainView()
             }
             
         }

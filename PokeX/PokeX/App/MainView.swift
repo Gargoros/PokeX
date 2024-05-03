@@ -20,11 +20,19 @@ struct MainView: View {
             //MARK: - Background color
             BackgroundView()
             
+            
+            PokeXCustomNavBar()
+                .zIndex(1)
+                .overlay(alignment: .topLeading) {
+                    
+                    //MARK: - Top title -> refactor to custom shape
+                    TopTitleView()
+                        .padding(.horizontal)
+                }
+            
             VStack {
-                //MARK: - Top title -> refactor to custom shape
-                TopTitleView()
-                
                 ScrollView {
+                    Spacer()
                     //MARK: - Top images pageView +
                     PokeXNewsView()
                     
@@ -70,11 +78,22 @@ struct MainView: View {
                     //MARK: - Link to the bulbapedia
                     PokeXLinkView()
                         .padding(.bottom, 40)
+                    Spacer()
                     
                 }
                 .scrollIndicators(.hidden)
+                
+                
             }
+            .zIndex(0)
+            .padding(.top, 20)
+            .padding(.bottom, 30)
             .padding(.horizontal)
+            
+            PokeXCustomNavBar()
+                .rotationEffect(.degrees(180))
+                .zIndex(1)
+
             
             
         }

@@ -20,7 +20,7 @@ struct PokeXHorizontalImageScrollView: View {
             if title != nil {
                 HStack {
                     Text(title!)
-                        .modifier(TopTitleModifier())
+                        .modifier(TopTitleModifier(foregroundColor: .black))
                     Spacer()
                 }
             }

@@ -17,9 +17,9 @@ struct PokeXHorizontalScrollSectionView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(title)
-                    .modifier(TopTitleModifier())
                 Spacer()
+                Text(title)
+                    .modifier(TopTitleModifier(foregroundColor: .black))
             }
             
             ScrollView(.horizontal){

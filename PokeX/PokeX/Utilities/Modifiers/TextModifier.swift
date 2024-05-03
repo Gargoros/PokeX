@@ -12,9 +12,11 @@ import SwiftUI
 //MARK: - Top Title Modifier
 struct TopTitleModifier: ViewModifier{
     
+    let foregroundColor: Color
+    
     func body(content: Content) -> some View {
         content
-            .foregroundStyle(.black)
+            .foregroundStyle(foregroundColor)
             .font(.title3)
             .fontWeight(.bold)
             .multilineTextAlignment(.center)
