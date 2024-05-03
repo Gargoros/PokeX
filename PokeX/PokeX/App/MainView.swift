@@ -45,7 +45,6 @@ struct MainView: View {
                                 cardImage: PokeXConstants.Images.pokedex
                             )
                         })
-                    .padding(.top, 60)
                     
                     
                     //MARK: - Grid Items -> refactor that part!!!
@@ -80,7 +79,7 @@ struct MainView: View {
                                         RoundedRectangle(cornerRadius: 12)
                                             .fill(PokeXConstants.PokemonsTypesColors.appGrassColor)
                                         HStack {
-                                            Text(PokeXConstants.SectionsStrings.types)
+                                            Text(PokeXConstants.Contents.machines)
                                                 .modifier(CardTitleModifier(foregroundColor: .white))
                                         }
                                         .padding()
@@ -91,6 +90,50 @@ struct MainView: View {
                         }
                     }
                     .frame(height: 150)
+                    
+                    Grid {
+                        GridRow{
+                            Grid {
+                                GridRow {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .fill(PokeXConstants.PokemonsTypesColors.appPsychicColor)
+                                        HStack {
+                                            Text(PokeXConstants.Contents.berries)
+                                                .modifier(CardTitleModifier(foregroundColor: .white))
+                                        }
+                                        .padding()
+                                    }
+                                    
+                                }
+                                GridRow {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .fill(PokeXConstants.PokemonsTypesColors.appSteelColor)
+                                        HStack {
+                                            Text(PokeXConstants.Contents.locations)
+                                                .modifier(CardTitleModifier(foregroundColor: .white))
+                                        }
+                                        .padding()
+                                    }
+                                    
+                                }
+                                
+                            }
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(PokeXConstants.PokemonsTypesColors.appBugColor)
+                                HStack {
+                                    Text(PokeXConstants.Contents.moves)
+                                        .modifier(CardTitleModifier(foregroundColor: .white))
+                                }
+                                .gridCellColumns(1)
+                            }
+                        }
+                    }
+                    .frame(height: 150)
+                    
+                    
                 }
                 .zIndex(0)
                 .padding(.horizontal, 8)
