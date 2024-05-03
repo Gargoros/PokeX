@@ -28,10 +28,10 @@ struct CustomNavBarShape: View {
                     y: heightG * 0.1))
                 path.addLine(to: CGPoint(
                     x: widthG * 0.6,
-                    y: heightG * 0.06))
+                    y: heightG * 0.075))
                 path.addLine(to: CGPoint(
                     x: widthG,
-                    y: heightG * 0.06))
+                    y: heightG * 0.075))
                 path.addLine(to: CGPoint(
                     x: widthG,
                     y: base))

@@ -19,8 +19,7 @@ struct MainView: View {
             
             //MARK: - Background color
             BackgroundView()
-            
-            
+            //MARK: - Custom NavBar Shape
             PokeXCustomNavBar()
                 .zIndex(1)
                 .overlay(alignment: .topLeading) {
@@ -28,75 +27,80 @@ struct MainView: View {
                     //MARK: - Top title -> refactor to custom shape
                     TopTitleView()
                         .padding(.horizontal)
+                        .offset(x: 20, y: 15)
                 }
             
-            VStack {
-                ScrollView {
-                    Spacer()
-                    //MARK: - Top images pageView +
-                    PokeXNewsView()
-                    
-                    //MARK: - Pokédex
-                    PokeXHorizontalScrollSectionView(
-                        title: PokeXConstants.SectionsStrings.hiTrainer,
-                        sectionsNames: PokeXConstants.contentsList,
-                        gridLayout: gridLayout
-                    )
-                    
-                    //MARK: - Pokémon Type
-                    PokeXHorizontalScrollSectionView(
-                        title: PokeXConstants.SectionsStrings.pokemonsType,
-                        sectionsNames: PokeXConstants.pokemonsTypesList,
-                        gridLayout: gridLayout
-                    )
-                    
-                    //MARK: - Region
-                    PokeXHorizontalImageScrollView(
-                        title: PokeXConstants.SectionsStrings.regions,
-                        image: Image("Paldea_artwork"),
-                        imageWidth: 220,
-                        imageHeight: 180
-                    )
-                    
-                    //MARK: - Games
-                    PokeXHorizontalImageScrollView(
-                        title: PokeXConstants.Contents.games,
-                        image: Image("Scarlet_EN_boxart"),
-                        imageWidth: 160
-                    )
-                    PokeXHorizontalImageScrollView(
-                        title: nil,
-                        image: Image("Crystal_EN_boxart"),
-                        imageWidth: 200
-                    )
+            NavigationStack {
+                
+                VStack {
+                    //MARK: - Pokedex Card View
+                    NavigationLink(
+                        destination: {
+                            PokemonListView()
+                        }, label: {
+                            PokeXPokedexCardView(
+                                fillColor: PokeXConstants.PokemonsTypesColors.appFireColor,
+                                cardIcon: PokeXConstants.Images.pokeball,
+                                cardTitle: PokeXConstants.SectionsStrings.pokedex,
+                                cardImage: PokeXConstants.Images.pokedex
+                            )
+                        })
+                    .padding(.top, 60)
                     
                     
-                    //MARK: - History
-                    PokeXInfoTextView()
-                        .padding(.bottom, 40)
-                    
-                    //MARK: - Link to the bulbapedia
-                    PokeXLinkView()
-                        .padding(.bottom, 40)
-                    Spacer()
-                    
+                    //MARK: - Grid Items -> refactor that part!!!
+                    Grid {
+                        GridRow{
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(PokeXConstants.PokemonsTypesColors.appPoisonColor)
+                                HStack {
+                                    Text(PokeXConstants.Contents.games)
+                                        .modifier(CardTitleModifier(foregroundColor: .white))
+                                }
+                                .gridCellColumns(1)
+                            }
+                            
+                            
+                            Grid {
+                                GridRow {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .fill(PokeXConstants.PokemonsTypesColors.appWaterColor)
+                                        HStack {
+                                            Text(PokeXConstants.Contents.items)
+                                                .modifier(CardTitleModifier(foregroundColor: .white))
+                                        }
+                                        .padding()
+                                    }
+                                    
+                                }
+                                GridRow {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .fill(PokeXConstants.PokemonsTypesColors.appGrassColor)
+                                        HStack {
+                                            Text(PokeXConstants.SectionsStrings.types)
+                                                .modifier(CardTitleModifier(foregroundColor: .white))
+                                        }
+                                        .padding()
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .frame(height: 150)
                 }
-                .scrollIndicators(.hidden)
-                
-                
+                .zIndex(0)
+                .padding(.horizontal, 8)
             }
-            .zIndex(0)
-            .padding(.top, 20)
-            .padding(.bottom, 30)
-            .padding(.horizontal)
-            
+            //MARK: - Custom NavBar Shape
             PokeXCustomNavBar()
                 .rotationEffect(.degrees(180))
                 .zIndex(1)
-
-            
-            
         }
+        .ignoresSafeArea()
     }
 }
 

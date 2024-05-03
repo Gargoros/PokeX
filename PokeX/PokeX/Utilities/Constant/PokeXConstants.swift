@@ -37,12 +37,13 @@ struct PokeXConstants {
     ]
     
     struct SectionsStrings {
-        static let pokeX        = "PokeX"
+        static let pokeX        = "PokéX"
         static let news         = "News"
         static let hiTrainer    = "Hi Trainer"
         static let categories   = "Categories"
-        static let pokemonsType = "Pokémon Type"
+        static let types        = "Types"
         static let regions      = "Regions"
+        static let pokedex      = "PokéDex"
     }
     
     struct PokemonsTypes {
@@ -187,6 +188,8 @@ struct PokeXConstants {
     //MARK: - Images
     struct Images{
         static let pokeXLogo = Image("pokeXLogo")
+        static let pokeball  = Image("IconPokeball")
+        static let pokedex   = Image("pokedexIcon")
     }
     
     //MARK: - Fonts

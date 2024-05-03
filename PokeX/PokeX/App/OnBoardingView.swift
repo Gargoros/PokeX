@@ -41,7 +41,7 @@ Arts, visuals and names are properties of Game Freak, Nintendo and The Pokémon 
 This app is not official and is not linked to the companies mentioned above. Some images used in this app are copyrighted and belong to Nintendo, GAME FREAK or The Pokémon Company. 
 They are used in the app in accordance with the laws of Fair Use. No copyright infringement intended.
 """)
-                .modifier(LargeTextModifier())
+                .modifier(LargeTextModifier(foregroundColor: .black))
                 
                 
                 

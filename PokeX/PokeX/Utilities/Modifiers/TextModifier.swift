@@ -22,15 +22,31 @@ struct TopTitleModifier: ViewModifier{
             .multilineTextAlignment(.center)
     }
 }
-
-
-//MARK: - Large Text Modifier
-struct LargeTextModifier: ViewModifier{
+//MARK: - Card Title Modifier
+struct CardTitleModifier: ViewModifier{
+    
+    let foregroundColor: Color
     
     func body(content: Content) -> some View {
         content
+            .foregroundStyle(foregroundColor)
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .minimumScaleFactor(0.6)
+            .multilineTextAlignment(.center)
+    }
+}
+
+//MARK: - Large Text Modifier
+struct LargeTextModifier: ViewModifier{
+    //MARK: - Properties
+    let foregroundColor: Color
+    
+    //MARK: - Views
+    func body(content: Content) -> some View {
+        content
             .font(.subheadline)
-            .foregroundStyle(.black)
+            .foregroundStyle(foregroundColor)
             .fontWeight(.medium)
             .multilineTextAlignment(.leading)
     }
